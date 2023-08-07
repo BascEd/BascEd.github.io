@@ -82,14 +82,23 @@ p {
 
 a.menu-link { display: none; }
 
+@media screen and (max-width: 520px) {
+  .main-header .logo a em{
+    display: none;
+  }
+}
+
 @media screen and (max-width: 950px) {
+  .main-header .logo {
+    margin-top: -8.2px;
+  }
   a.menu-link {
     float: right;
     display: block;
     font-size: 36px;
     color: #fff;
     padding-right: 30px;
-    padding-top: 15px;
+    padding-top: 5px;
   }
   nav[role="navigation"] {
     clear: both;
@@ -132,7 +141,7 @@ a.menu-link { display: none; }
   nav[role="navigation"] li.active a {
       color: #f5a425;
   }
-  
+
   @media screen and (min-width: 951px) {
     .js nav[role="navigation"] {
       max-height: none;
@@ -152,7 +161,7 @@ a.menu-link { display: none; }
 
 @media screen and (max-width: 1050px) {
   .main-header .logo {
-      padding-left: 30px!important;
+      padding-left: 10px!important;
   }
 
   .main-menu {
@@ -188,11 +197,11 @@ a.menu-link { display: none; }
     font-size: 24px;
     text-transform:none;
     font-weight: 800;
-    color: #fff;
+    color: #f5a425;
 }
 .main-header .logo a em {
     font-style: normal;
-    color: #f5a425;
+    color: #fff;
 }
 
 .main-menu {
@@ -463,7 +472,11 @@ section.features .col-4 {
 .content-hide p {
   color: #fff;
 }
-
+@media screen and (max-width: 300px) {
+  .main-header .logo a {
+    display: none;
+  }
+}
 @media screen and (max-width: 767px) {
 
   .features-content {
@@ -596,8 +609,55 @@ section.why-us {
 }
 
 .tabs-content {
+    padding-left: 175px;
     margin-top: 60px;
     text-align: left;
+}
+
+
+/* .tabs-content article .row .col-md-6 .carousel-control-prev{
+  padding-left: 30px;
+}
+.tabs-content article .row .col-md-6 .carousel-control-next{
+  padding-left: 10px;
+} */
+
+.tabs-content #tabs-1 .row .col-md-6 .carouselExampleIndicators{
+  height: 200px;
+}
+
+.tabs-content #tabs-1 .row .col-md-6 .carousel-indicators{
+  margin-bottom: -30px;
+  padding-right: 150px;
+}
+
+.tabs-content #tabs-1 .row .col-md-6 .wadah-profil{
+  width: 205px;
+  margin-left: -400px;
+}
+
+.tabs-content #tabs-1 .row .col-md-6 #gagah{
+  width: 205px;
+  background-color: grey;
+  border-bottom-right-radius: 30px;
+}
+
+.tabs-content #tabs-1 .row .col-md-6 #gagah p{
+  padding-left: 15px;
+  color: #fff;
+}
+
+.tabs-content #tabs-1 .row .col-md-6 img {
+  width: 250px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.tabs-content #tabs-1 .row .col-md-6 #gagah h2 {
+  margin-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 20px;
+  color: #f5a425;
 }
 
 @media screen and (max-width: 767px) {

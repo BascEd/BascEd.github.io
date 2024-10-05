@@ -9,13 +9,16 @@
     <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
+    <link rel="icon" href="assets/images/LogoBasced2.png" type="image/png">
     <title>Basic Education</title>
     
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" integrity="sha384-PJsj/BTMqILvmcej7ulplguok8ag4xFTPryRq8xevL7eBYSmpXKcbNVuy+P0RMgq" crossorigin="anonymous">
-
+    
+    <!-- Icon Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="assets/css/fontawesome.css">
@@ -24,19 +27,16 @@
     <link rel="stylesheet" href="assets/css/lightbox.css">
 
   </head>
-
 <body>
-
-   
   <!--header-->
-  <header class="main-header clearfix" role="header">
-    <img class="logobc" src="assets/images/LogoBasced2.png" width="100px" height="60px">
-    <div class="logo">
-      <a href="#">BascEd <em>Basic Education</em></a>
+  <header class="main-header clearfix ps-4 pe-3" role="header">
+    <img class="logobc h-100" src="assets/images/LogoBasced2.png">
+    <div class="logo h-100 d-flex align-items-center">
+      <a class="h-100 d-flex align-items-center">Basic&nbsp;<span class="text-white"> Education</span></a>
     </div>
-    <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
-    <nav id="menu" class="main-nav" role="navigation">
-      <ul class="main-menu">
+    <a href="#menu" class="menu-link h-100"><i class="bi bi-list d-flex align-items-center h-100"></i></a>
+    <nav id="menu" class="main-nav" role="navigation" style="width: 100vw !important; margin-left: -16px;">
+      <ul class="main-menu ms-4">
         <li><a href="#section1">Home</a></li>
         <li><a href="#section2">About Us</a></li>
         <!-- <li class="has-submenu"><a href="#section2">About Us</a></li> -->
@@ -64,10 +64,6 @@
       </div>
   </section>
   <!-- ***** Main Banner Area End ***** -->
-
-
-  
-
   <section class="section why-us" data-section="section2">
     <div class="container">
       <div class="row">
@@ -96,45 +92,37 @@
                       <div class="carousel-inner">
                         <div class="carousel-item active">
                           <div class="wadah-profil">
-                            <img src="assets/images/CEOHabib.png"/>
+                            <img src="assets/images/profile.webp" class="w-100"/>
                             <div class="card" id="gagah">
-                              <h2>Irsyadi Habib</h2>
-                              <p>Instructor BascEd</p>
+                              <h2 class="text-center">Habib</h2>
+                              <p class="text-center">Instructor BascEd</p>
                             </div>
                           </div>
                         </div>
                         <div class="carousel-item">
                           <div class="wadah-profil">
-                            <img src="assets/images/maul.jpg"/>
+                            <img src="assets/images/profile.webp" class="w-100"/>
                             <div class="card" id="gagah">
-                              <h2>Maulana Malik</h2>
-                              <p>Instructor BascEd</p>
+                              <h2 class="text-center">Maulana</h2>
+                              <p class="text-center">Instructor BascEd</p>
                             </div>
                           </div>
                         </div>
                         <div class="carousel-item">
                           <div class="wadah-profil">
-                            <img src="assets/images/rido.png"/>
+                            <img src="assets/images/profile.webp" class="w-100"/>
                             <div class="card" id="gagah">
-                              <h2>Ridho Zovavic</h2>
-                              <p>Instructor BascEd</p>
+                              <h2 class="text-center">Haidar</h2>
+                              <p class="text-center">Instructor BascEd</p>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                      </button>
-                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                      </button> -->
                     </div>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-6 d-flex flex-column justify-content-center">
                     <h4>Info</h4>
-                    <p>BascEd adalah penyedia program edukasi yang berfokus pada bidang IT padatingkat dasar, yang bertujuan untuk memberikan pengetahuan dasar kepada para pembelajar.</p>
+                    <p>BascEd adalah penyedia program edukasi yang berfokus pada bidang IT pada tingkat dasar, yang bertujuan untuk memberikan pengetahuan dasar kepada para pembelajar.</p>
                     <p>Komitmen kami adalah meningkatkan literasi digital dan mengembangkan potensi peserta didik melalui program edukasi IT yang inovatif.</p>
                   </div>
                 </div>
@@ -179,31 +167,50 @@
         </div>
         <div class="owl-carousel owl-theme">
           <div class="item">
-            <img src="assets/images/cisco.jpg" alt="Course #1">
+            <img src="assets/images/PengPro1.jpg" alt="Course #3">
             <div class="down-content">
-              <h4>Cisco Packet Tracer</h4>
-              <p>Jembatani Dunia Nyata dan Jaringan Digital menggunakan  Cisco Packet Tracer!</p>
+              <h4>Algoritma Pemrograman</h4>
+              <p>Jelajahi Dunia Koding dengan Kursus ini! Programkan Suksesmu dengan Kami!</p>
               <div class="infoCourse" style="display: none;">
                 <b>Dalam kursus ini, Anda akan mempelajari topik-topik menarik berikut:</b>
-                <li>Pengantar Jaringan</li>
-                <li>Konfigurasi DNS Server</li>
-                <li>Konfigurasi Routing Statis</li>
-                <li>Konfigurasi Routing Dynamic</li>
-                <li>Konfigurasi VLAN</li>
+                <li>Tipe data dan array</li>
+                <li>Pengkondisian dan perulangan</li>
+                <li>Fungsi dan procedure</li>
+                <li>Sorting</li>
               </div>
-              <div class="author-image">
-                <a href="#section5" onclick="toggleInfoCourse(event, this)"><i class="fa fa-angle-double-left">Info</i></a>
-              </div>
-              <div class="text-button-pay">
-                <a href="http://wa.me/6282362235520?text=text=Halo%2C%20saya%20sangat%20tertarik%20untuk%20mengikuti%20program%20kursus%20'Cisco%20Packet%20Tracer'%20yang%20Anda%20tawarkan.%20Apa%20saja%20langkah-langkah%20yang%20harus%20saya%20lakukan%20untuk%20mendaftar%20dan%20memulai%20kursus%20ini%3F%20Terima%20kasih%21">Order <i class="fa fa-angle-double-right"></i></a>
+              <div class="author-image d-flex justify-content-between">
+                <a href="#section5" onclick="toggleInfoCourse(event, this)" class="text-danger"><i class="bi bi-chevron-double-left">Info</i></a>
+
+                <a href="http://wa.me/6287768126649?text=Halo,%20saya%20sangat%20tertarik%20untuk%20mengikuti%20program%20kursus%20'Algoritma%20Pemrograman'%20yang%20Anda%20tawarkan.%20Apa%20saja%20langkah-langkah%20yang%20harus%20saya%20lakukan%20untuk%20mendaftar%20dan%20memulai%20kursus%20ini?%20Terima%20kasih!" class="text-primary">Order <i class="bi bi-chevron-double-right"></i></a>
               </div>
             </div>
           </div>
           <div class="item">
-            <img src="assets/images/mikrotik.jpg" alt="Course #2">
+            <img src="assets/images/webpro.jpg" alt="Course #1">
             <div class="down-content">
-              <h4>Pengenalan Mikrotik</h4>
-              <p>Perkuat Koneksimu dengan Keahlian Mikrotik! Jangan Biarkan Sinyalmu Lemah!</p>
+              <h4>Web Developer Menggunakan Laravel</h4>
+              <p>Jadilah Pengembang Web, Ubah Ide Anda Menjadi Realitas!</p>
+              <div class="infoCourse" style="display: none;">
+                <b>Dalam kursus ini, Anda akan mempelajari topik-topik menarik berikut:</b>
+                <li>HTML, CSS dan Javascript</li>
+                <li>Bootstrap</li>
+                <li>Blade</li>
+                <li>Controller dan Model</li>
+                <li>Middleware</li>
+                <li>Paginator</li>
+              </div>
+              <div class="author-image d-flex justify-content-between">
+                <a href="#section5" onclick="toggleInfoCourse(event, this)" class="text-danger"><i class="bi bi-chevron-double-left">Info</i></a>
+
+                <a href="http://wa.me/6287768126649?text=text=Halo%2C%20saya%20sangat%20tertarik%20untuk%20mengikuti%20program%20kursus%20'Web%20Developer%20Menggunakan%20Laravel'%20yang%20Anda%20tawarkan.%20Apa%20saja%20langkah-langkah%20yang%20harus%20saya%20lakukan%20untuk%20mendaftar%20dan%20memulai%20kursus%20ini%3F%20Terima%20kasih%21" class="text-primary">Order<i class="bi bi-chevron-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/images/pbo.jpg" alt="Course #2">
+            <div class="down-content">
+              <h4>Pemrogramman Berorientasi Objek</h4>
+              <p>Objek adalah Kunci, Kuasai Pemrograman yang Menyentuh Hidup!</p>
               <div class="infoCourse" style="display: none;">
                 <b>Dalam kursus ini, Anda akan mempelajari topik-topik menarik berikut:</b>
                 <li>Pengenalan Mikrotik</li>
@@ -212,40 +219,18 @@
                 <li>Konfigurasi Firewall</li>
                 <li>Konfigurasi Hotspot</li>
               </div>
-              <div class="author-image">
-                <a href="#section5" onclick="toggleInfoCourse(event, this)"><i class="fa fa-angle-double-left">Info</i></a>
-              </div>
-              <div class="text-button-pay">
-                <a href="http://wa.me/6282362235520?text=Halo,%20saya%20sangat%20tertarik%20untuk%20mengikuti%20program%20kursus%20'Pengenalan%20Mikrotik'%20yang%20Anda%20tawarkan.%20Apa%20saja%20langkah-langkah%20yang%20harus%20saya%20lakukan%20untuk%20mendaftar%20dan%20memulai%20kursus%20ini?%20Terima%20kasih!">Order <i class="fa fa-angle-double-right"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <img src="assets/images/PengPro1.jpg" alt="Course #3">
-            <div class="down-content">
-              <h4>Pengenalan Program</h4>
-              <p>Jelajahi Dunia Koding dengan Kursus ini! Programkan Suksesmu dengan Kami!</p>
-              <div class="infoCourse" style="display: none;">
-                <b>Dalam kursus ini, Anda akan mempelajari topik-topik menarik berikut:</b>
-                <li>Tipe data dan array</li>
-                <li>Pengkondisian dan perulangan</li>
-                <li>Fungsi dan procedure</li>
-                <li>Dasar HTML & CSS</li>
-                <li>Dasar Laravel</li>
-              </div>
-              <div class="author-image">
-                <a href="#section5" onclick="toggleInfoCourse(event, this)"><i class="fa fa-angle-double-left">Info</i></a>
-              </div>
-              <div class="text-button-pay">
-                <a href="http://wa.me/6282362235520?text=Halo,%20saya%20sangat%20tertarik%20untuk%20mengikuti%20program%20kursus%20'Pengenalan%20Program'%20yang%20Anda%20tawarkan.%20Apa%20saja%20langkah-langkah%20yang%20harus%20saya%20lakukan%20untuk%20mendaftar%20dan%20memulai%20kursus%20ini?%20Terima%20kasih!">Order <i class="fa fa-angle-double-right"></i></a>
+              <div class="author-image d-flex justify-content-between">
+                <a href="#section5" onclick="toggleInfoCourse(event, this)" class="text-danger"><i class="bi bi-chevron-double-left">Info</i></a>
+
+                <a href="http://wa.me/6287768126649?text=Halo,%20saya%20sangat%20tertarik%20untuk%20mengikuti%20program%20kursus%20'Pengenalan%20Mikrotik'%20yang%20Anda%20tawarkan.%20Apa%20saja%20langkah-langkah%20yang%20harus%20saya%20lakukan%20untuk%20mendaftar%20dan%20memulai%20kursus%20ini?%20Terima%20kasih!" class="text-primary">Order <i class="bi bi-chevron-double-right"></i></a>
               </div>
             </div>
           </div>
           <div class="item">
-            <img src="assets/images/tekkom.jpg" alt="Course #4">
+            <img src="assets/images/jarkom.jpg" alt="Course #4">
             <div class="down-content">
-              <h4>Tekhnis - Tekhnis Komputer</h4>
-              <p>Jangan biarkan teknologi mengintimidasi. Pahami dasar-dasar Teknis - Teknis Komputer.</p>
+              <h4>Jaringan Komputer</h4>
+              <p>Perkuat Koneksimu dengan Keahlian Mikrotik! Jangan Biarkan Sinyalmu Lemah!</p>
               <div class="infoCourse" style="display: none;">
                 <b>Dalam kursus ini, Anda akan mempelajari topik-topik menarik berikut:</b>
                 <li>Pengantar Jaringan</li>
@@ -254,19 +239,18 @@
                 <li>Konfigurasi Routing Dynamic</li>
                 <li>Konfigurasi VLAN</li>
               </div>
-              <div class="author-image">
-                <a href="#section5" onclick="toggleInfoCourse(event, this)"><i class="fa fa-angle-double-left">Info</i></a>
-              </div>
-              <div class="text-button-pay">
-                <a href="http://wa.me/6282362235520?text=Halo%2C%20saya%20sangat%20tertarik%20untuk%20mengikuti%20program%20kursus%20'Tekhnis-Tekhnis%20Komputer'%20yang%20Anda%20tawarkan.%20Apa%20saja%20langkah-langkah%20yang%20harus%20saya%20lakukan%20untuk%20mendaftar%20dan%20memulai%20kursus%20ini%3F%20Terima%20kasih%21">Order <i class="fa fa-angle-double-right"></i></a>
+              <div class="author-image d-flex justify-content-between">
+                <a href="#section5" onclick="toggleInfoCourse(event, this)" class="text-danger"><i class="bi bi-chevron-double-left">Info</i></a>
+
+                <a href="http://wa.me/6287768126649?text=Halo%2C%20saya%20sangat%20tertarik%20untuk%20mengikuti%20program%20kursus%20'Jaringan%20Komputer'%20yang%20Anda%20tawarkan.%20Apa%20saja%20langkah-langkah%20yang%20harus%20saya%20lakukan%20untuk%20mendaftar%20dan%20memulai%20kursus%20ini%3F%20Terima%20kasih%21" class="text-primary">Order <i class="bi bi-chevron-double-right"></i></a>
               </div>
             </div>
           </div>
           <div class="item">
-            <img src="assets/images/LogikaMatematika2.jpg" alt="">
+            <img src="assets/images/sisop.jpg" alt="">
             <div class="down-content">
-              <h4>Logika Matematika Lanjut</h4>
-              <p>Kuatkan fondasi pikiranmu! Sederhanakan kompleksitas hidup dan temukan solusi yang brilian.</p>
+              <h4>Sistem Operasi</h4>
+              <p>Jelajahi Dunia Digital! Temukan Rahasia di Balik Setiap Sistem yang Berkuasa.</p>
               <div class="infoCourse" style="display: none;">
                 <b>Dalam kursus ini, Anda akan mempelajari topik-topik menarik berikut:</b>
                 <li>Tabel kebenaran</li>
@@ -275,69 +259,10 @@
                 <li>Metode Pembuktian</li>
                 <li>Induksi Matematika</li>
               </div>
-              <div class="author-image">
-                <a href="#section5" onclick="toggleInfoCourse(event, this)"><i class="fa fa-angle-double-left">Info</i></a>
-              </div>
-              <div class="text-button-pay">
-                <a href="http://wa.me/6282362235520?text=Halo,%20saya%20sangat%20tertarik%20untuk%20mengikuti%20program%20kursus%20'Logika%20Matematika%20Lanjut'%20yang%20Anda%20tawarkan.%20Apa%20saja%20langkah-langkah%20yang%20harus%20saya%20lakukan%20untuk%20mendaftar%20dan%20memulai%20kursus%20ini?%20Terima%20kasih!">Order <i class="fa fa-angle-double-right"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <img src="assets/images/LogikaMatematika2.jpg" alt="">
-            <div class="down-content">
-              <h4>Paket Logika Dasar Irit</h4>
-              <p>Kuatkan logika anda, berikan pemikiran yang terbaik untuk masa depan Anda.</p>
-              <div class="infoCourse" style="display: none;">
-                <b>Dalam paket ini, Anda akan mempelajari 2 kursus menarik berikut:</b>
-                <li>Logika Matematika Lanjut</li>
-                <li>Pengenalan Program</li>
-              </div>
-              <div class="author-image">
-                <a href="#section5" onclick="toggleInfoCourse(event, this)"><i class="fa fa-angle-double-left">Info</i></a>
-              </div>
-              <div class="text-button-pay">
-                <a href="http://wa.me/6282362235520?text=Halo,%20saya%20sangat%20tertarik%20untuk%20mengikuti%20program%20kursus%20'Logika%20Matematika%20Lanjut'%20yang%20Anda%20tawarkan.%20Apa%20saja%20langkah-langkah%20yang%20harus%20saya%20lakukan%20untuk%20mendaftar%20dan%20memulai%20kursus%20ini?%20Terima%20kasih!">Order <i class="fa fa-angle-double-right"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <img src="assets/images/LogikaMatematika2.jpg" alt="">
-            <div class="down-content">
-              <h4>Paket Semua Tahu</h4>
-              <p>Mari pahami dasar pendidikan, jadikan diri lebih baik dalam pendidikan.</p>
-              <div class="infoCourse" style="display: none;">
-                <b>Dalam paket ini, Anda akan mempelajari semua kursus menarik yang kami tawarkan:</b>
-                <li>Tekhnis - Tekhnis Komputer</li>
-                <li>Cisco Packet Tracer</li>
-                <li>Pengenalan Mikrotik</li>
-                <li>Logika Matematika Lanjut</li>
-                <li>Pengenalan Program</li>
-              </div>
-              <div class="author-image">
-                <a href="#section5" onclick="toggleInfoCourse(event, this)"><i class="fa fa-angle-double-left">Info</i></a>
-              </div>
-              <div class="text-button-pay">
-                <a href="http://wa.me/6282362235520?text=Halo,%20saya%20sangat%20tertarik%20untuk%20mengikuti%20program%20kursus%20'Logika%20Matematika%20Lanjut'%20yang%20Anda%20tawarkan.%20Apa%20saja%20langkah-langkah%20yang%20harus%20saya%20lakukan%20untuk%20mendaftar%20dan%20memulai%20kursus%20ini?%20Terima%20kasih!">Order <i class="fa fa-angle-double-right"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <img src="assets/images/LogikaMatematika2.jpg" alt="">
-            <div class="down-content">
-              <h4>Paket Trio</h4>
-              <p>Dunia butuh jaringan penghubung, mari sajikan penghubung yang terbaik!.</p>
-              <div class="infoCourse" style="display: none;">
-                <b>Dalam paket ini, Anda akan mempelajari 3 kursus menarik berikut:</b>
-                <li>Tekhnis - Tekhnis Komputer</li>
-                <li>Cisco Packet Tracer</li>
-                <li>Pengenalan Mikrotik</li>
-              </div>
-              <div class="author-image">
-                <a href="#section5" onclick="toggleInfoCourse(event, this)"><i class="fa fa-angle-double-left">Info</i></a>
-              </div>
-              <div class="text-button-pay">
-                <a href="http://wa.me/6282362235520?text=Halo,%20saya%20sangat%20tertarik%20untuk%20mengikuti%20program%20kursus%20'Logika%20Matematika%20Lanjut'%20yang%20Anda%20tawarkan.%20Apa%20saja%20langkah-langkah%20yang%20harus%20saya%20lakukan%20untuk%20mendaftar%20dan%20memulai%20kursus%20ini?%20Terima%20kasih!">Order <i class="fa fa-angle-double-right"></i></a>
+              <div class="author-image d-flex justify-content-between">
+                <a href="#section5" onclick="toggleInfoCourse(event, this)" class="text-danger"><i class="bi bi-chevron-double-left">Info</i></a>
+
+                <a href="http://wa.me/6287768126649?text=Halo,%20saya%20sangat%20tertarik%20untuk%20mengikuti%20program%20kursus%20'Sistem%20Operasi%20Lanjut'%20yang%20Anda%20tawarkan.%20Apa%20saja%20langkah-langkah%20yang%20harus%20saya%20lakukan%20untuk%20mendaftar%20dan%20memulai%20kursus%20ini?%20Terima%20kasih!" class="text-primary">Order <i class="bi bi-chevron-double-right"></i></a>
               </div>
             </div>
           </div>
@@ -345,30 +270,6 @@
       </div>
     </div>
   </section>
-
-  <section class="section infoCourse" data-section="section5">
-    <div id="ciscoContent" class="contentInfo" style="display: none;">
-      <p>Ini adalah konten ciscoContent.</p>
-    </div>
-    <div id="mikrotikContent" class="contentInfo" style="display: none;">
-      <p>Ini adalah konten mikrotikContent.</p>
-    </div>
-    <div id="pengproContent" class="contentInfo" style="display: none;">
-      <p>Ini adalah konten pengproContent.</p>
-    </div>
-    <div id="ttkContent" class="contentInfo" style="display: none;">
-      <p>Ini adalah konten ttkContent.</p>
-    </div>
-    <div id="officeContent" class="contentInfo" style="display: none;">
-      <p>Ini adalah konten officeContent.</p>
-    </div>
-    <div id="logmatContent" class="contentInfo" style="display: none;">
-      <p>Ini adalah konten logmatContent.</p>
-    </div>
-  </section>
-  
-
-
 
   <section class="section contact" data-section="section6">
     <div class="container">
@@ -379,70 +280,38 @@
           </div>
         </div>
         <div class="col-md-6">
-        
-        <!-- Do you need a working HTML contact-form script?
-                	
-                    Please visit https://templatemo.com/contact page -->
-                    
-          <!-- <form id="contact" action="" method="post">
-            <div class="row">
-              <div class="col-md-6">
-                  <fieldset>
-                    <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required="">
-                  </fieldset>
-                </div>
-                <div class="col-md-6">
-                  <fieldset>
-                    <input name="email" type="text" class="form-control" id="email" placeholder="Your Email" required="">
-                  </fieldset>
-                </div>
-              <div class="col-md-12">
-                <fieldset>
-                  <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
-                </fieldset>
-              </div>
-              <div class="col-md-12">
-                <fieldset>
-                  <button type="submit" id="form-submit" class="button">Send Message Now</button>
-                </fieldset>
-              </div>
-            </div>
-          </form> -->
           <div class="column left">
             <div class="header-c">Message Me</div>
               <div class="icon-c">
-                <a style="text-decoration:none" href="http://wa.me/6282362235520">
-                  <img src="assets/images/wa.png" width="50px" height="50px">
-                  <b class="ic1">Whatsapp</b>
-                  <p>+62 823 6223 5520</p>
+                <a style="text-decoration:none" class="d-flex justify-content-center" href="http://wa.me/6287768126649">
+                  <i class="bi bi-whatsapp" style="font-size: 50px; color: rgb(44, 215, 74);"></i>
+                  <div class="d-flex flex-column justify-content-center me-3">
+                    <b class="ic1">Whatsapp</b>
+                    <p class="mb-0">+62 877 6812 6649</p>
+                  </div>
                 </a>
               </div>
 
               <div class="icon-c">
-                <a style="text-decoration:none" href="https://t.me/Maullubis123">
-                  <img src="assets/images/tele.png" width="50px" height="50px">
-                  <b class="ic2">Telegram</b>
-                  <p>@Maullubis123</p>
+                <a style="text-decoration:none" class="d-flex justify-content-center" href="https://www.instagram.com/basced.basic/">
+                  <i class="bi bi-instagram" style="font-size: 50px; color: rgb(246, 1, 141);"></i>
+                  <div class="d-flex flex-column justify-content-center me-3">
+                    <b class="ic3">Instagram</b>
+                    <p class="mb-0">@basced.basic</p>
+                  </div>
                 </a>
               </div>
 
               <div class="icon-c">
-                <a style="text-decoration:none" href="https://www.instagram.com/basced.basic/">
-                  <img src="assets/images/ig.png" width="50px" height="50px">
-                  <b class="ic3">Instagram</b>
-                  <p>@basced.basic</p>
-                </a>
-              </div>
-
-              <div class="icon-c">
-                <a style="text-decoration:none" href="mailto:bascedteam@gmail.com">
-                  <img src="assets/images/email.png" width="50px" height="50px">
-                  <b class="ic4">Email</b>
-                  <p>bascedteam@gmail.com</p>
+                <a style="text-decoration:none" class="d-flex justify-content-center" href="mailto:bascedteam@gmail.com">
+                  <i class="bi bi-envelope" style="font-size: 50px; color: rgb(59, 133, 237);"></i>
+                  <div class="d-flex flex-column justify-content-center me-3">
+                    <b class="ic4">Email</b>
+                    <p class="mb-0">bascedteam@gmail.com</p>
+                  </div>
                 </a>
               </div>
             </div>
-            
         </div>
         <div class="col-md-6">
           <div id="map">
@@ -457,9 +326,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <p><i class="fa fa-copyright"></i> Copyright 2020 by Grad School  
-          
-           | Design: <a href="https://templatemo.com" rel="sponsored" target="_parent">TemplateMo</a></p>
+          <p>&copy; Copyright 2020 by Grad School | Re-Design: <a href="https://github.com/LubisMaulana" rel="sponsored" target="_parent">LubisMaulana</a></p>
         </div>
       </div>
     </div>
@@ -544,7 +411,7 @@
 <script>
   function toggleInfoCourse(event, element) {
     event.preventDefault(); // Menghentikan tindakan default (pindah ke bagian berikutnya)
-    var infoLink = element; // Mengambil elemen tautan 'Info'
+    var infoLink = element.querySelector('i.bi'); // Mengambil elemen tautan 'Info'
     var item = element.closest('.item'); // Mencari elemen terdekat dengan kelas 'item'
     var infoCourse = item.querySelector('.infoCourse'); // Mencari elemen dengan kelas 'infoCourse'
     var image = item.querySelector('img'); // Mengambil elemen gambar
@@ -557,14 +424,14 @@
       image.style.display = 'none'; // Menyembunyikan elemen gambar
       heading.style.display = 'none'; // Menyembunyikan elemen h4
       paragraph.style.display = 'none'; // Menyembunyikan elemen p
-      infoLink.innerHTML = 'Back';
+      infoLink.innerText = 'Back';
       downContent.childNodes.forEach(function(node) {
         if (node !== element.parentNode && node !== infoCourse) {
           node.style.display = 'none'; // Menyembunyikan elemen kecuali 'infoCourse' dan tautan 'Info'
         }
       });
     } else {
-      infoLink.innerHTML = 'Info';
+      infoLink.innerText = 'Info';
       infoCourse.style.display = 'none'; // Menyembunyikan elemen 'infoCourse'
       image.style.display = 'block'; // Menampilkan elemen gambar
       heading.style.display = 'block'; // Menampilkan elemen h4

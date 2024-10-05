@@ -36,6 +36,15 @@ p {
     line-height: 22px;
 }
 
+.carousel-item {
+  float: left!important;
+  margin-left: 0px!important;
+}
+
+.carousel-item.active{
+  display: flex;
+  justify-content: center;
+}
 
 .section-heading {
     text-align: center;
@@ -44,17 +53,17 @@ p {
 
 .section-heading h2:before {
     width: 1px;
-    height: 100px;
+    height: 50px;
     background-color: rgba(250,250,250,0.1);
     position: absolute;
-    top: -102px;
+    top: -52px;
     content: '';
     left: 50%;
     transform: translate(-50%);
 }
 
 .section-heading h2 {
-    margin-top: 100px;
+    margin-top: 50px;
     position: relative;
     font-size: 18px;
     font-weight: 500;
@@ -89,16 +98,11 @@ a.menu-link { display: none; }
 }
 
 @media screen and (max-width: 950px) {
-  .main-header .logo {
-    margin-top: -8.2px;
-  }
   a.menu-link {
     float: right;
     display: block;
     font-size: 36px;
     color: #fff;
-    padding-right: 30px;
-    padding-top: 5px;
   }
   nav[role="navigation"] {
     clear: both;
@@ -114,8 +118,6 @@ a.menu-link { display: none; }
   }
   nav[role="navigation"].active {
     max-height: 20em;
-    height: 20em;
-    overflow-y: scroll;
   }
   nav[role="navigation"] ul {
     top: 0;
@@ -184,7 +186,6 @@ a.menu-link { display: none; }
 .main-header .logobc{
   float: left;
   line-height: 57px;
-  padding-left: 40px;
 }
 
 .main-header .logo {
@@ -206,7 +207,6 @@ a.menu-link { display: none; }
 
 .main-menu {
     float: right;
-    padding-right: 40px;
 }
 
 .main-menu li {
@@ -378,7 +378,9 @@ a.menu-link { display: none; }
 
 }
 @media screen and (max-width: 767px) {
-
+  section.why-us{
+    padding-bottom: 50px!important;
+  }
   .main-banner .caption h6 {
     font-weight: 500;
   }
@@ -478,7 +480,9 @@ section.features .col-4 {
   }
 }
 @media screen and (max-width: 767px) {
-
+  section.why-us .col-md-12:nth-child(2) .tabs-content .col-md-6.d-flex{
+    margin-top: 100px;
+  }
   .features-content {
     padding: 15px;
   }
@@ -503,16 +507,14 @@ section.features .col-4 {
 
 }
 
-
-
 /* Why Choosing Us */
 
 section.why-us {
-    background-image: url(../images/choosing-bg.jpg);
-    background-color: #172238;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-bottom: 100px;
+  background-image: url(../images/choosing-bg.jpg);
+  background-color: #172238;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 75px;
 }
 
 #tabs {
@@ -594,7 +596,6 @@ section.why-us {
   border-color: #f5a425;
 }
 #tabs h4 {
-    margin-top: 60px;
     font-size: 32px;
     font-weight: 700;
     letter-spacing: 1px;
@@ -609,7 +610,6 @@ section.why-us {
 }
 
 .tabs-content {
-    padding-left: 175px;
     margin-top: 60px;
     text-align: left;
 }
@@ -628,12 +628,10 @@ section.why-us {
 
 .tabs-content #tabs-1 .row .col-md-6 .carousel-indicators{
   margin-bottom: -30px;
-  padding-right: 150px;
 }
 
 .tabs-content #tabs-1 .row .col-md-6 .wadah-profil{
   width: 205px;
-  margin-left: -400px;
 }
 
 .tabs-content #tabs-1 .row .col-md-6 #gagah{
@@ -643,7 +641,6 @@ section.why-us {
 }
 
 .tabs-content #tabs-1 .row .col-md-6 #gagah p{
-  padding-left: 15px;
   color: #fff;
 }
 
@@ -671,7 +668,6 @@ section.why-us {
 .tabs-content img {
     width: 100%;
     overflow: hidden;
-    padding-right: 45px;
 }
 
 @media screen and (max-width: 767px) {
@@ -690,8 +686,8 @@ section.courses {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #172238;
-    padding-bottom: 100px;
-    padding: 0px 30px 100px 30px;
+    padding-bottom: 50px;
+    padding: 0px 30px 50px 30px;
 }
 
 section.courses .item img {
@@ -1247,7 +1243,7 @@ section.contact {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #172238;
-    padding-bottom: 120px;
+    padding-bottom: 20px;
 }
 
 
@@ -1346,26 +1342,21 @@ section.contact .icon-c img{
 section.contact .icon-c .ic1{
   font-size: 20px;
   color: rgb(44, 215, 74);
-  padding-left: 30px;
 }
 section.contact .icon-c .ic2{
   font-size: 20px;
   color: rgb(41, 170, 236);
-  padding-left: 30px;
 }
 section.contact .icon-c .ic3{
   font-size: 20px;
   color: rgb(246, 1, 141);
-  padding-left: 30px;
 }
 section.contact .icon-c .ic4{
   font-size: 20px;
   color: rgb(59, 133, 237);
-  padding-left: 30px;
 }
 section.contact .icon-c p{
   color: white;
-  padding-left: 80px;
 }
 /* Footer */
 
